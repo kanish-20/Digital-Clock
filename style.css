@@ -1,0 +1,74 @@
+
+body{
+    background-color: black;
+    color:aliceblue;
+     font-family : 'Courier New', monospace;
+     align-items: center;
+     height: 90vh;       
+     margin: 0;
+      display: flex;
+      justify-content: center;
+      
+      
+    
+}
+#clock{
+    
+    
+    font-size: 60px;
+    padding: 3px 20px;
+  transition: opacity 0.4s ease-in-out;
+  outline:2px solid lightpink ;
+  outline-offset: 10px;
+  outline-style: double;
+  border-radius: 5px;
+  margin: 0px;
+  box-shadow: 0 0 20px;
+  transition: all 0.4s ease-in-out;
+}
+#clockStyle{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #000;
+    z-index: 0;
+    position: relative;
+
+}
+#clockStyle::before{
+    top: -4px;
+    bottom: -4px;
+    right: -4px;
+    left: -4px;
+    position: absolute;
+    z-index: -1;
+    content: "";
+    background:linear-gradient(45deg, hotpink, cyan, violet, hotpink);
+    animation: glowBorder 4s linear infinite;
+    border-radius: 25px;
+    opacity: 0.2;
+}
+@keyframes glowborder{
+   0% {filter: hue-rotate(0deg);}
+   100% {filter: hue-rotate(360deg);}
+}
+
+#date{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    transition: opacity 0.4s ease-in-out;
+    font-family : 'Courier New', monospace;
+
+}
+#one{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: none;
+    
+}

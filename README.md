@@ -12,5 +12,4 @@ A simple digital clock web app built using HTML, CSS, and JavaScript.
 
 ## 👩‍💻 Author
 **Kanishka P**  
-🌐 [Visit My GitHub](https://github.com/kanish-20)
 
